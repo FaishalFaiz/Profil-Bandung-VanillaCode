@@ -25,6 +25,14 @@ nav a {
   
 }
 
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+
 nav a:hover {
   font-weight: bold;
 }
@@ -49,7 +57,7 @@ nav a:hover {
   box-shadow: 10px 13px 51px -24px rgba(0,0,0,0.97);
   border-radius: 5px;
   padding: 20px;
-  margin: 50px 30px 50px 30px;
+  margin: 3rem 1rem 2rem 1rem;  
 }
 
 .jumbotron {
@@ -60,12 +68,6 @@ nav a:hover {
   padding: 60px;
 }
 
-nav li {
-  display: inline;
-  list-style-type: none;
-  margin-right: 30px;
-}
-
 nav {
   background-color:  #00a2c6;
   padding: 10px;
@@ -74,26 +76,23 @@ nav {
 }
 
 #content {
-  float: left;
+  flex: 3;
   width: 75%;
 }
 
 aside {
-  float: right;
+  flex: 1;
   width: 25%;
   box-sizing: border-box;
 }
 
 main {
-  overflow: auto;
+  display: flex;
 }
 
-@media screen and (max-width: 1000px) {
-  #content, aside {
-    width: 100%;
-    padding: 0px;
-  }
-}
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 768px) {}
 
 header {
   display: inline;
